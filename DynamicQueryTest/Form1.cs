@@ -53,9 +53,6 @@ namespace DynamicQueryTest
 
         private void LoadData()
         {
-            
-            //string results = PrepareString();
-            //MessageBox.Show(results);
             DataTable data = new DataTable();
             data.Columns.Add("Name",typeof(string));
             data.Columns.Add("HasValue", typeof(string));
@@ -73,25 +70,5 @@ namespace DynamicQueryTest
             }
             dataGridView1.DataSource = data;
         }
-
-        //private string PrepareString()
-        //{
-        //    if (query.AssignedValues == null) return "no assigned results";
-        //    StringBuilder build = new StringBuilder();
-        //    foreach (var item in query.AssignedValues)
-        //    {
-        //        build.Append(item.Key.Name + ": has value = ");
-        //        if (item.Value)
-        //        {
-        //            build.Append(item.Value + "; value = ");
-        //            build.AppendLine(item.Key.GetValue(query).ToString() + ".");
-        //        }
-        //        else
-        //        {
-        //            build.AppendLine(item.Value + ".");
-        //        }
-        //    }
-        //    return build.ToString();
-        //}
     }
 }
