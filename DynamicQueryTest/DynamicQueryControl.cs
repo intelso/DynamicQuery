@@ -109,22 +109,6 @@ namespace DynamicQueryTest
                                 }
                             }
                         }
-                        //MethodInfo method = type.GetMethod(at.DataMethodName, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
-                        //if (method != null && method.ReturnType.Equals(typeof(DataTable)))
-                        //{
-                        //    QueryMethodAttribute mat = method.GetCustomAttribute(typeof(QueryMethodAttribute)) as QueryMethodAttribute;
-                        //    if (mat!=null)
-                        //    {
-                        //        Func<DataTable> getDataMethod = Expression.Lambda<Func<DataTable>>(Expression.Call(Expression.Constant(query), method)).Compile();
-                        //        if (getDataMethod!=null)
-                        //        {
-                        //            element.ElementType = mat.IsFixedQuery ? QueryTypes.FixedList : QueryTypes.EditableList;
-                        //            element.DisplayMember = mat.DisplayMember;
-                        //            element.ValueMemebr = mat.ValueMember;
-                        //            element.GetData = getDataMethod;
-                        //        }
-                        //    }
-                        //}
                     }
                     element.Localize = localizationMethod;
                     element.Parent = flowLayoutPanel1;
